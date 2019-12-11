@@ -1,0 +1,27 @@
+<div class="collapse" id="collapseSearch">
+	<label for="name">Search by name:</label>
+	<input class="rounded align-self-end text-left" type="text" 
+		name="search" placeholder="Name" style="width: 120px;" data-search-name><br>
+	<label class="mr-3" for="age">Search by age:</label>
+	<input class="mr-1 rounded text-center" type="number"
+		min="1" max="100" name="age" placeholder="from" style="width: 50px;" data-search-age-min>
+	<span>-</span>
+	<input class="rounded text-center" type="number" 
+		min="1" max="100" name="age" placeholder="to" style="width: 50px;" data-search-age-max><br>
+	<label for="sex">Search by gender:</label>
+	<select class="rounded float-right text-center" name="sex" style="width: 120px;" data-select-sex>
+		<option value="" selected>Any</option>
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="male|female">Male|Female</option>
+	</select><br>
+	<label for="pages">Items per page:</label>
+	<select class="pages rounded float-right text-center" name="pages" style="width: 50px;" data-pages-count>
+		<option value="all" disabled>All</option>
+		<option value="5">5</option>
+		<option value="10" selected>10</option>
+		<option value="15">15</option>
+		<option value="25">25</option>
+		<option value="50">50</option>
+	</select>
+</div>

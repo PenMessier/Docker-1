@@ -1,0 +1,95 @@
+Preliminaries
+
+## Install docker and docker machine
+
+brew install docker
+brew install docker machine
+
+# Check version
+docker -v
+
+# Move .docker to goinfre and create a symbolic link:
+mv .docker/ ../../Volumes/Storage/goinfre/frenna
+ln -s ../../Volumes/Storage/goinfre/frenna/.docker $HOME
+
+#################################################################################################
+
+00_how_to_docker
+
+## 01 Create a virtual machine with docker-machine using the virtualbox driver, and named Char.
+# run machine:
+docker-machine env Char
+
+# Start docker-machine:
+docker-machine start Char
+
+# docker-machine ssh New df -h
+
+## 05 Run hello world:
+docker run hello-world
+
+## 06 Comments:
+# -d  - run that container in detached mode (on background)
+# run - this instructs docker we are running an image as a container
+# --name - this tells Docker what we want to name our container
+# -p 5000:80 this informs Docker how we want to expose the port
+# nginx - this tells Docker which image to use for the container
+# rm - automatically remove the container when it exits
+
+# List of all running containers:
+docker ps -a
+docker container ls
+
+## 08 Detach form the container Ctrl-P Ctrl-Q
+
+## List of all containers:
+docker ps -a
+
+## 22 Commments:
+# docker-machine ssh <machine-name> - log into or run a command on a machine using SSH
+# docker swarm join --token ... HOST:PORT - join a swarm as a node and/or manager
+# docker swarm join-token worker -q - with -q option dicplays token
+# $(docker-machine ip Char):22322 - ip and port of a manager machine
+# check:
+docker node ls
+
+#################################################################################################
+
+# 01_dockerfiles
+
+# Build and run a Dockerfile
+# from Dockerfile dir:
+docker build -t ex00:Dockerfile .
+docker run --rm -ti ex00:Dockerfile
+
+# Check images:
+docker images
+
+# 01
+# Run TeamSpeak client, copy vm-ip and tocken
+
+# 02
+# http://<vm-ip>:3000
+
+# 03
+# Icrease memory for that part:
+docker-machine stop
+VBoxManage modifyvm default --cpus 2
+VBoxManage modifyvm default --memory 4096
+docker-machine start
+# or set memory size when initialize:
+docker-machine create -d virtualbox --virtualbox-memory 4096 default
+
+# Connect via ssh:
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container-name>
+ping -c 2 <container-ip>
+ssh root@<container-ip>
+
+#################################################################################################
+
+## 02_bonus
+
+# json
+# Since the application launches via vm, to connect json-server via host web brouser
+# change API url in people/main.js from 'localhost' to vm-ip:
+# const personsApiService = new PersonsApiService('http://localhost/persons');

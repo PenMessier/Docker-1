@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>People</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+		crossorigin="anonymous"
+	/>
+	
+	<script
+		src="https://code.jquery.com/jquery-3.4.0.min.js"
+		integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"
+	></script>
+
+	<script type="text/javascript" src="./templates/load-templates.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript" src="./person.model.js"></script>
+	<script type="text/javascript" src="./persons.api.service.js"></script>
+	<script type="text/javascript" src="./persons.application.js"></script>
+	<script type="text/javascript" src="./persons.component.js"></script>
+	<script type="text/javascript" src="./search.component.js"></script>
+	<script type="text/javascript" src="./pagination.component.js"></script>
+	<script type="text/javascript" src="./add.person.component.js"></script>
+	<script type="text/javascript" src="./add.person.model.js"></script>
+	<script type="text/javascript" src="./remove.person.component.js"></script>
+
+	<link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-default mb-5" style="background-color: #A61D00">
+		<h1 style="color: #fff">People</h1>
+			<div class="mr-3" style="color: #fff; font-size: 15px;">
+				<p>
+					<button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+						<i class="fas fa-search"></i>
+					</button>
+					<button class="btn btn-outline-light" type="button" data-toggle="modal" data-target="#modalChangePerson" data-add-person-button>
+						<i class="fas fa-user-plus"></i>
+					</button>
+				</p>
+				<div id="search">
+				</div>
+				<div class="modal fade" id="modalChangePerson" tabindex="-1" role="dialog" aria-labelledby="modalAddPerson" aria-hidden="true">
+				</div>
+			</div>
+	</nav>
+	<nav aria-label="pagination">
+	 	<ul class="pagination justify-content-end mr-3">
+	 	</ul>
+	</nav>
+	<div id="main" class="container-fluid wrap">
+		<div class="text-center my-4">
+				<div class="spinner-border" role="status"></div>
+			</div>
+	</div>
+
+<script type="text/template" data-template="person" src="./templates/person.html"></script>
+
+<script type="text/template" data-template="search" src="./templates/search.person.html"></script>
+
+<script type="text/template" data-template="pagination">
+	<li class="page-item" data-prev-page>
+		<button class="page-link" tabindex="-1">Previous</button>
+	</li>
+	<li class="page-item" data-next-page>
+		<button class="page-link" tabindex="-1">Next</button>
+	</li>
+</script>
+
+<script type="text/template" data-template="paginationItem">
+	<li class="page-item" data-page-item>
+		<button class="page-link text-danger"></button>
+	</li>
+</script>
+
+<script type="text/template" data-template="addPerson" src="./templates/add.person.html"></script>
+
+<script type="text/template" data-template="removePerson" src="./templates/remove.person.html"></script>
+
+<script type="text/template" data-template="msgAddPersonName">
+	<div class="alert alert-light d-none" role="alert">
+		<p class="msgInvalid" style="font-size: 0.9em" data-msg-add-person-name>Name must contain at least 1 symbol</p>
+	</div>
+</script>
+
+<script type="text/template" data-template="msgAddPersonAge">
+	<div class="alert alert-light d-none" role="alert">
+		<p class="msgInvalid" style="font-size: 0.9em" data-msg-add-person-age>Age must be more than 0</p>
+	</div>
+</script>
+
+<script type="text/template" data-template="msgAddPersonGender">
+	<div class="alert alert-light d-none" role="alert">
+		<p class="msgInvalid" style="font-size: 0.9em">Please select gender</p>
+	</div>
+</script>
+
+</body>
+<footer class="container-fluid" style="background-color: #BF4930; height: 50px">
+	<blockquote class="blockquote text-right" style="vertical-align: center">
+		<p style="color: #fff; font-size: 15px"><em>
+			Things fall apart so that things can fall together
+		</em></p>
+	</blockquote>
+</footer>
+</html>

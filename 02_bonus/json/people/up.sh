@@ -1,0 +1,1 @@
+json-server --watch persons.json --static ./

@@ -1,0 +1,28 @@
+.page-item.disabled {
+	pointer-events: none !important;
+}
+
+.msgInvalid {
+	color: darkred;
+}
+
+.msgInvalid:before {
+	position: relative;
+	left: -5px;
+	bottom: 2px;
+	content: "\10102";
+}
+
+.msgValid {
+	color: green;
+}
+
+.msgValid:before {
+	position: relative;
+	left: -5px;
+	content: "\2713";
+}
+
+.persons_list {
+	color: darkred;
+}

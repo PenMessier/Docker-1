@@ -1,0 +1,399 @@
+{
+  "persons": [
+    {
+      "id": 0,
+      "name": "Adam Gold",
+      "age": 87,
+      "sex": "male",
+      "childrenIds": [
+        2,
+        3
+      ],
+      "parentsIds": [],
+      "spouseId": 1
+    },
+    {
+      "id": 1,
+      "name": "Eva Gold",
+      "age": 85,
+      "sex": "female",
+      "childrenIds": [
+        2,
+        3
+      ],
+      "parentsIds": [],
+      "spouseId": 0
+    },
+    {
+      "id": 2,
+      "name": "John Gold",
+      "age": 69,
+      "sex": "male",
+      "childrenIds": [
+        5
+      ],
+      "parentsIds": [
+        0,
+        1
+      ],
+      "spouseId": 4
+    },
+    {
+      "id": 3,
+      "name": "Jane Gold",
+      "age": 68,
+      "sex": "female",
+      "childrenIds": [
+        7,
+        8,
+        9
+      ],
+      "parentsIds": [
+        0,
+        1
+      ],
+      "spouseId": 6
+    },
+    {
+      "id": 4,
+      "name": "Katya Silver",
+      "age": 67,
+      "sex": "female",
+      "childrenIds": [
+        5
+      ],
+      "parentsIds": [
+        16,
+        17
+      ],
+      "spouseId": 2
+    },
+    {
+      "id": 5,
+      "name": "Michael Gold",
+      "age": 37,
+      "sex": "male",
+      "childrenIds": [
+        11,
+        12
+      ],
+      "parentsIds": [
+        2,
+        4
+      ],
+      "spouseId": 10
+    },
+    {
+      "id": 6,
+      "name": "Jack Bronze",
+      "age": 69,
+      "sex": "male",
+      "childrenIds": [
+        7,
+        8,
+        9
+      ],
+      "parentsIds": [
+        20,
+        21
+      ],
+      "spouseId": 3
+    },
+    {
+      "id": 7,
+      "name": "Nick Bronze",
+      "age": 39,
+      "sex": "male",
+      "childrenIds": [
+        13
+      ],
+      "parentsIds": [
+        3,
+        6
+      ],
+      "spouseId": 24
+    },
+    {
+      "id": 8,
+      "name": "Paul Bronze",
+      "age": 37,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [
+        3,
+        6
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 9,
+      "name": "Liza Bronze",
+      "age": 35,
+      "sex": "female",
+      "childrenIds": [],
+      "parentsIds": [
+        3,
+        6
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 10,
+      "name": "Olivia Platinum",
+      "age": 37,
+      "sex": "female",
+      "childrenIds": [
+        11,
+        12
+      ],
+      "parentsIds": [
+        18,
+        19
+      ],
+      "spouseId": 5
+    },
+    {
+      "id": 11,
+      "name": "Shona Gold",
+      "age": 19,
+      "sex": "female",
+      "childrenIds": [
+        14,
+        15
+      ],
+      "parentsIds": [
+        5,
+        10
+      ],
+      "spouseId": 13
+    },
+    {
+      "id": 12,
+      "name": "Shane Gold",
+      "age": 21,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [
+        5,
+        10
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 13,
+      "name": "Sam Bronze",
+      "age": 20,
+      "sex": "male",
+      "childrenIds": [
+        14,
+        15
+      ],
+      "parentsIds": [
+        7,
+        24
+      ],
+      "spouseId": 11
+    },
+    {
+      "id": 14,
+      "name": "Victoria Bronze",
+      "age": 2,
+      "sex": "female",
+      "childrenIds": [],
+      "parentsIds": [
+        11,
+        13
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 15,
+      "name": "Victor Bronze",
+      "age": 1,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [
+        11,
+        13
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 16,
+      "name": "Adam Silver",
+      "age": 90,
+      "sex": "male",
+      "childrenIds": [
+        4
+      ],
+      "parentsIds": [],
+      "spouseId": 17
+    },
+    {
+      "id": 17,
+      "name": "Eva Silver",
+      "age": 89,
+      "sex": "female",
+      "childrenIds": [
+        4
+      ],
+      "parentsIds": [],
+      "spouseId": 16
+    },
+    {
+      "id": 18,
+      "name": "Adam Platinum",
+      "age": 50,
+      "sex": "male",
+      "childrenIds": [
+        10
+      ],
+      "parentsIds": [],
+      "spouseId": 19
+    },
+    {
+      "id": 19,
+      "name": "Eva Platimum",
+      "age": 48,
+      "sex": "female",
+      "childrenIds": [
+        10
+      ],
+      "parentsIds": [],
+      "spouseId": 18
+    },
+    {
+      "id": 20,
+      "name": "Adam Bronze",
+      "age": 91,
+      "sex": "male",
+      "childrenIds": [
+        6
+      ],
+      "parentsIds": [],
+      "spouseId": 21
+    },
+    {
+      "id": 21,
+      "name": "Eva Bronze",
+      "age": 85,
+      "sex": "female",
+      "childrenIds": [
+        6
+      ],
+      "parentsIds": [],
+      "spouseId": 20
+    },
+    {
+      "id": 22,
+      "name": "Adam Copper",
+      "age": 70,
+      "sex": "male",
+      "childrenIds": [
+        14
+      ],
+      "parentsIds": [],
+      "spouseId": 23
+    },
+    {
+      "id": 23,
+      "name": "Eva Copper",
+      "age": 65,
+      "sex": "male|female",
+      "childrenIds": [
+        24
+      ],
+      "parentsIds": [],
+      "spouseId": 22
+    },
+    {
+      "id": 24,
+      "name": "Kate Copper",
+      "age": 37,
+      "sex": "female",
+      "childrenIds": [
+        13
+      ],
+      "parentsIds": [
+        22,
+        23
+      ],
+      "spouseId": 7
+    },
+    {
+      "id": 25,
+      "name": "Kristi Tarlington",
+      "age": "20",
+      "sex": "female",
+      "childrenIds": [],
+      "parentsIds": [],
+      "spouseId": 26
+    },
+    {
+      "id": 26,
+      "name": "Harold Test",
+      "age": 22,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [],
+      "spouseId": 25
+    },
+    {
+      "id": 27,
+      "name": "Henrietta Rousseau",
+      "age": 50,
+      "sex": "female",
+      "childrenIds": [
+        29,
+        30
+      ],
+      "parentsIds": [],
+      "spouseId": 28
+    },
+    {
+      "id": 28,
+      "name": "Jack Rousseau",
+      "age": 55,
+      "sex": "male",
+      "childrenIds": [
+        29,
+        30
+      ],
+      "parentsIds": [],
+      "spouseId": 27
+    },
+    {
+      "id": 29,
+      "name": "Jacob Rousseau",
+      "age": 10,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [
+        27,
+        28
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 30,
+      "name": "Jacqueline Rousseau",
+      "age": 20,
+      "sex": "female",
+      "childrenIds": [],
+      "parentsIds": [
+        27,
+        28
+      ],
+      "spouseId": null
+    },
+    {
+      "id": 31,
+      "name": "new user",
+      "age": 12,
+      "sex": "male",
+      "childrenIds": [],
+      "parentsIds": [],
+      "spouseId": null
+    }
+  ]
+}

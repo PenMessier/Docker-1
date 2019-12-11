@@ -1,0 +1,36 @@
+<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title" id="modalAddPersonLabel" style="color: rgb(0, 0, 0)" data-modal-add-person-header></h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body" style="color: rgb(0, 0, 0); font-size: 1.2em">
+			<form>
+				<div class="form-group mb-2">
+					<label class="col-form-label" for="name">Person's name:</label><br>
+					<input class="form-control" type="text" name="addPersonName" placeholder="Name" data-add-person-name>
+				</div>
+				<div class="form-group mb-2">
+					<label class="col-form-label" for="age">Age:</label><br>
+					<input class="form-control" type="number"
+						min="1" max="100" name="age" placeholder="Age" data-add-person-age>
+				</div>
+				<div class="form-group mb-2">
+					<label class="col-form-label" for="gender">Gender:</label><br>
+					<select class="form-control" name="gender" data-add-person-gender><br>
+						<option value="" selected>Any</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="male|female">Male|Female</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal" data-add-person-close>Close</button>
+			<button type="submit" class="btn btn-danger" disabled="disabled" data-add-person>Save changes</button>
+		</div>
+	</div>
+</div>

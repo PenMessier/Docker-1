@@ -1,0 +1,18 @@
+<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="modalRemovePersonLabel" style="color: rgb(0, 0, 0)">Are you going to remove <span class="text-danger" data-remove-person-name></span> ?</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body" style="color: rgb(0, 0, 0); font-size: 1.2em">
+			<p>This action will affect the following persons:</p>
+			<ul class="persons_list" data-persons-affected-list></ul>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="submit" class="btn btn-danger" data-remove-person-button>Remove person</button>
+		</div>
+	</div>
+</div>

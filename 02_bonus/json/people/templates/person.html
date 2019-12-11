@@ -1,0 +1,30 @@
+<div class="container-fluid mb-5 border-danger border-bottom">
+  <div class="container-fluid">
+    <h4 data-person-name>Name</h4>
+  </div>
+  <table class="table table-condensed">
+      <tr>
+        <th class="border-right" style="border: none">Age</th>
+        <th class="border-right" style="border: none">Gender</th>
+        <th class="border-right" style="border: none">Spouse</th>
+        <th class="border-right" style="border: none">Children</th>
+        <th style="border: none">Parents</th>
+        <th style="border: none"></th>
+      </tr>
+      <tr>
+        <td class="border-right" style="border: none" data-person-age></td>
+        <td class="border-right" style="border: none" data-person-sex></td>
+        <td class="border-right" style="border: none" data-person-spouse></td>
+        <td class="border-right" style="border: none" data-person-children></td>
+        <td style="border: none" data-person-parents></td>
+        <td class="text-right" style="border: none" data-person-actions>
+          <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#modalChangePerson" data-edit-person-button>
+						<i class="fas fa-user-edit"></i>
+          </button>
+          <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#modalChangePerson" data-remove-person-button>
+            <i class="fas fa-user-minus"></i>
+          </button>
+        </td>
+      </tr>
+  </table>
+</div>
